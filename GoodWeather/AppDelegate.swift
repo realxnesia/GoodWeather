@@ -14,6 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //MARK: Ganti warna NavBar
+        UINavigationBar.appearance().barTintColor = UIColor.blue
+        //MARK: Ganti warna title di NavBar (Ganti juga -Status Bar Stylenya- menjadi 'light content' di description project) (Edit Info.plist juga)
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        //MARK: Ganti warna Button di NavBar
+        UIBarButtonItem.appearance().tintColor = UIColor.brown
+        
         return true
     }
 
