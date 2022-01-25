@@ -14,7 +14,7 @@ class AddWeatherListViewModel{
 }
 
 class AddWeatherViewModel{
-    func addWeather(for city: String, @escaping (WeatherViewModel)){
+    func addWeather(for city: String, completion: @escaping (WeatherViewModel) -> Void){
         let weatherURL = Constants.Urls.urlForWeatherByCity(city: city)
         
         //MARK: Construct Weather Resource

@@ -61,7 +61,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Settings" id="PF9-QP-JOJ"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="LyD-fN-zfg">
                             <connections>
-                                <segue destination="qK9-wN-STj" kind="presentation" id="EWc-4V-wLv"/>
+                                <segue destination="qK9-wN-STj" kind="presentation" identifier="AddWeatherCityViewController" id="EWc-4V-wLv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
