@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05A0D9B7279FA1E700C98966 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A0D9B6279FA1E700C98966 /* WeatherTableViewCell.swift */; };
 		70788710279F671200053F58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7078870F279F671200053F58 /* AppDelegate.swift */; };
 		70788712279F671200053F58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70788711279F671200053F58 /* SceneDelegate.swift */; };
 		70788717279F671200053F58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70788715279F671200053F58 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05A0D9B6279FA1E700C98966 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 		7078870C279F671200053F58 /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7078870F279F671200053F58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70788711279F671200053F58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05A0D9B5279FA1B100C98966 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				05A0D9B6279FA1E700C98966 /* WeatherTableViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
 		70788703279F671200053F58 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 		7078870E279F671200053F58 /* GoodWeather */ = {
 			isa = PBXGroup;
 			children = (
+				05A0D9B5279FA1B100C98966 /* Custom Cells */,
 				70788723279F6A3000053F58 /* Controllers */,
 				7078870F279F671200053F58 /* AppDelegate.swift */,
 				70788711279F671200053F58 /* SceneDelegate.swift */,
@@ -149,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A0D9B7279FA1E700C98966 /* WeatherTableViewCell.swift in Sources */,
 				70788725279F6A5600053F58 /* WeatherListTableViewController.swift in Sources */,
 				70788710279F671200053F58 /* AppDelegate.swift in Sources */,
 				70788727279F6A8200053F58 /* AddWeatherCityViewController.swift in Sources */,
