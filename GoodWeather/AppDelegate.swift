@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //MARK: Ganti warna NavBar
         UINavigationBar.appearance().barTintColor = UIColor.blue
         //MARK: Ganti warna title di NavBar (Ganti juga -Status Bar Stylenya- menjadi 'light content' di description project) (Edit Info.plist juga)
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
         //MARK: Ganti warna Button di NavBar
         UIBarButtonItem.appearance().tintColor = UIColor.brown
         

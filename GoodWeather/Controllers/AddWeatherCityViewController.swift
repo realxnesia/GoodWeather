@@ -9,6 +9,7 @@ import UIKit
 
 class AddWeatherCityViewController: UIViewController {
 
+    @IBOutlet weak var addWeatherTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,5 +26,10 @@ class AddWeatherCityViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func didCityButtonSaveTapped(_ sender: UIButton) {
+    }
+    @IBAction func didCloseBarButton(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
