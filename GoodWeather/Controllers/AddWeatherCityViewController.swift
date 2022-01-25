@@ -27,6 +27,17 @@ class AddWeatherCityViewController: UIViewController {
     }
     */
     @IBAction func didCityButtonSaveTapped(_ sender: UIButton) {
+        if let city = addWeatherTextField.text{
+            let weatherURL = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=942a800f3a8b7d2b39b395b6a98230d7&units=imperial")
+            let weatherResource = Resource<Any>(url: weatherURL!){ data in
+                return data
+            }
+            
+            APIService().load(resource: weatherResource) { result in
+                
+            }
+        }
+        
     }
     @IBAction func didCloseBarButton(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
