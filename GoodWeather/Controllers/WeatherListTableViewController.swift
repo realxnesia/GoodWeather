@@ -19,6 +19,23 @@ class WeatherListTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        
+        /*
+        //MARK: Coba panggil API(Tidak recomend. direkomendasikan menggunakan view model)
+        let weatherURL = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=jakarta&appid=942a800f3a8b7d2b39b395b6a98230d7&units=imperial")
+        let resource = Resource<WeatherResponse>(url: weatherURL!) { data in
+            return try? JSONDecoder().decode(WeatherResponse.self, from: data)
+        }
+        
+        
+        //untuk 'completionnya' disini kita menggunakan tipe tertentu yang sudah kita tentukan. dalam hal ini model responsenya.
+        APIService().load(resource: resource) { weatherResponse in
+            //MARK: Alasan kita unwrap adalah karena ketika melakukan decode di atas, kita menggunakan try (optional)
+            if let weatherResponse = weatherResponse{
+                print(weatherResponse)
+            }
+        }
+        */
     }
 
     // MARK: - Table view data source
